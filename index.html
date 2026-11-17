@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080b16">
+  <meta name="description" content="Steam Watch — мониторинг скидок на игры Steam для Windows. Скачайте программу и следите за ценами в гривнах.">
+  <title>Steam Watch — отслеживай скидки Steam</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <div class="page-background" aria-hidden="true"><div class="glow glow-a"></div><div class="glow glow-b"></div><div class="grid-floor"></div></div>
+  <div class="site-wrap">
+    <header class="topbar">
+      <a href="#top" class="brand"><span class="brand-icon">S<span class="brand-spark">✳</span></span><span class="brand-name">STEAM<span>WATCH</span></span></a>
+      <nav aria-label="Разделы сайта"><a href="#features">Возможности</a><a href="#changelog">Ченджлог</a><a href="#credits">Благодарности</a></nav>
+      <a href="#download" class="nav-download">Скачать <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="eyebrow-dot"></span><span id="site-badge">ПРОГРАММА ДЛЯ WINDOWS 10 / 11</span></div>
+          <div class="hero-kicker">СТОИМОСТЬ ИГР · ПОД КОНТРОЛЕМ</div>
+          <h1 id="hero-heading">Твои игры.<br><span>Твои скидки.</span></h1>
+          <p class="lead" id="hero-description">Отслеживай цены на игры Steam в гривнах и получай уведомления Windows, когда появляется выгодное предложение.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/download" id="hero-download"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 17v3h16v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Скачать Steam Watch <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-secondary" href="#features">Что внутри <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-facts"><span><span class="live-mini"></span> Версия <strong id="hero-version">1.0</strong></span><span class="fact-divider"></span><span>Бесплатно</span><span class="fact-divider"></span><span>Windows 10 / 11</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Демонстрационная иллюстрация интерфейса Steam Watch">
+          <div class="mock-glow"></div>
+          <div class="mock-window">
+            <div class="mock-titlebar"><div class="traffic"><i></i><i></i><i></i></div><span>STEAM WATCH</span><span class="mock-online"><i></i> MONITORING</span></div>
+            <div class="mock-inside">
+              <div class="mock-head"><span class="mock-label">PRICE INTELLIGENCE</span><span class="mock-status">● TRACKING ON</span></div>
+              <div class="mock-heading">GAME TRACKER<span>01 / 03</span></div>
+              <div class="mock-search"><span>⌕</span> Выберите игру для мониторинга цен <b>↵</b></div>
+              <div class="mock-game"><div class="mock-game-icon">01</div><div class="mock-game-name"><strong>Ваша игра</strong><span>STEAM · UA</span></div><div class="mock-game-cost"><small>НАБЛЮДЕНИЕ</small><strong>АКТИВНО</strong></div></div>
+              <div class="mock-stat-grid"><div><span>ТЕКУЩАЯ ЦЕНА</span><strong>₴ —</strong><small>данные загружаются в приложении</small></div><div><span>РЕКОРДНАЯ СКИДКА</span><strong>— %</strong><small>доступно через ITAD</small></div></div>
+              <div class="mock-bottom"><span><i></i> WINDOWS NOTIFICATIONS</span><span>EVERY 30 MIN <b>↻</b></span></div>
+            </div>
+          </div>
+          <div class="floating-notice"><div class="notice-icon">↘</div><div><strong>Скидка найдена!</strong><span>Уведомление в Windows</span></div><div class="notice-dot"></div></div>
+        </div>
+      </section>
+
+      <div class="signal-row"><span>ПОИСК ПО НАЗВАНИЮ</span><i></i><span>ЦЕНЫ В ₴</span><i></i><span>УВЕДОМЛЕНИЯ WINDOWS</span><i></i><span>МОНИТОРИНГ СКИДОК</span></div>
+
+      <section id="features" class="section"><div class="section-top"><div><div class="overline">01 / ВОЗМОЖНОСТИ</div><h2>Всё, что нужно,<br><em>чтобы не переплачивать.</em></h2></div><p>Минимум действий. Добавь игру — и Steam Watch проверит её стоимость за тебя.</p></div>
+        <div class="features-grid">
+          <article class="feature feature-main"><span class="feature-number">01 — SMART SEARCH</span><div class="feature-icon icon-cyan">⌕</div><h3>Поиск любой игры</h3><p>Введи точное название игры, найди её в каталоге Steam и добавь в отслеживание.</p><div class="feature-search-demo"><span>⌕</span> HELLDIVERS 2 <b>↗</b></div></article>
+          <article class="feature"><span class="feature-number">02 — REAL PRICES</span><div class="feature-icon icon-purple">₴</div><h3>Цены в гривнах</h3><p>Текущая цена, размер скидки и стоимость со скидкой для украинского региона Steam.</p></article>
+          <article class="feature"><span class="feature-number">03 — ALERT SYSTEM</span><div class="feature-icon icon-pink">↗</div><h3>Мгновенно заметишь</h3><p>При обнаружении новой скидки программа отправит уведомление Windows.</p></article>
+          <article class="feature"><span class="feature-number">04 — PRICE HISTORY</span><div class="feature-icon icon-teal">⌁</div><h3>История скидок</h3><p>Посмотри известный рекорд скидки через IsThereAnyDeal — нужен бесплатный API-ключ.</p></article>
+        </div>
+      </section>
+
+      <section id="download" class="download-section"><div class="download-orb"></div><div class="download-copy"><span class="overline">02 / ПОЛУЧИТЬ ПРИЛОЖЕНИЕ</span><h2>Поймай свою<br><em>следующую скидку.</em></h2><p id="release-note">Первая публичная версия · Python 3.11+</p><div class="release-badges"><span>◈ WINDOWS</span><span id="release-version">VERSION 1.0</span><span id="release-size">ZIP АРХИВ</span></div></div><div class="download-box"><div class="download-arrow">↓</div><span class="download-box-label">OFFICIAL DOWNLOAD</span><h3>Steam Watch</h3><p>Готовый проект на Python</p><a class="btn btn-primary btn-block" href="/download" id="main-download">СКАЧАТЬ .ZIP <span>↗</span></a><small>Для работы требуется Python 3.11+ и интернет. Архив включает файл запуска для Windows.</small></div></section>
+
+      <section class="section log-section" id="changelog"><div class="section-top"><div><div class="overline">03 / ИСТОРИЯ ОБНОВЛЕНИЙ</div><h2>Ченджлог<span class="h2-dot">.</span></h2></div><p>Каждое изменение — ещё один шаг к удобному мониторингу скидок.</p></div><div id="changelog-list" class="log-list"><div class="log-loading">Загрузка изменений…</div></div></section>
+
+      <section class="credits" id="credits"><div class="credits-bloom" aria-hidden="true">✳</div><div class="credits-copy"><div class="overline">04 / ОСОБАЯ БЛАГОДАРНОСТЬ</div><h2>Спасибо,<br><em id="tester-name">нашему тестеру.</em></h2><p id="tester-note">Спасибо за помощь с проверкой проекта, внимание к деталям и обратную связь. Именно так Steam Watch становится лучше.</p><div class="credit-sign">WITH GRATITUDE <span>♥</span></div></div><div class="credits-badge"><div class="credits-badge-core">✳</div><span>COMMUNITY<br>POWERED</span></div></section>
+    </main>
+    <footer class="footer"><div class="footer-top"><a href="#top" class="brand"><span class="brand-icon">S<span class="brand-spark">✳</span></span><span class="brand-name">STEAM<span>WATCH</span></span></a><span>DISCOUNT MONITORING / MADE FOR GAMERS</span></div><div class="footer-bottom"><span id="author">MADE BY S1REX (and gpt)</span><span>Неофициальный проект. Не связан с Valve или Steam.</span><button type="button" id="dev-trigger" title="Режим разработчика">режим разработчика</button></div></footer>
+  </div>
+
+  <div class="overlay" id="admin-overlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" type="button" aria-label="Закрыть">✕</button><div class="overline">STEAM WATCH / CONTROL PANEL</div><h2 id="modal-title">Режим <em>разработчика.</em></h2>
+      <div id="login-screen"><p class="modal-hint">Введи пароль для доступа к настройкам сайта.</p><form id="login-form"><label for="admin-password">ПАРОЛЬ</label><input type="password" id="admin-password" autocomplete="current-password" placeholder="••••••••" required><button class="btn btn-primary btn-block" type="submit">ОТКРЫТЬ ПАНЕЛЬ ↗</button></form></div>
+      <div id="editor-screen" hidden><p class="modal-hint">Изменения сохраняются на сервере и сразу отображаются посетителям сайта.</p><form id="editor-form">
+        <div class="editor-fields">
+          <label>Название сайта<input name="site_name" maxlength="50" required></label>
+          <label>Надпись над заголовком<input name="badge" maxlength="85" required></label>
+          <label>Заголовок<input name="headline" maxlength="100" required></label>
+          <label>Описание<textarea name="description" maxlength="600" rows="3" required></textarea></label>
+          <div class="fields-2"><label>Версия<input name="release_version" maxlength="24" required></label><label>Подпись к релизу<input name="release_note" maxlength="140" required></label></div>
+          <label>Кому спасибо<input name="tester_name" maxlength="100" required></label>
+          <label>Текст благодарности<textarea name="tester_note" maxlength="500" rows="3" required></textarea></label>
+          <label>Подпись автора<input name="author" maxlength="140" required></label>
+          <div class="editor-subtitle">Ченджлог <button type="button" id="add-log" class="small-outline">+ Добавить версию</button></div>
+          <div id="editor-logs"></div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">СОХРАНИТЬ ИЗМЕНЕНИЯ ↗</button>
+      </form>
+      <div class="upload-area"><div class="editor-subtitle">Архив для скачивания</div><p>Загрузи новый ZIP — кнопка «Скачать» начнёт отдавать эту версию.</p><form id="upload-form"><input type="file" id="release-file" accept=".zip,application/zip" required><button type="submit" class="btn btn-secondary btn-block">ЗАГРУЗИТЬ НОВЫЙ ZIP ↑</button></form></div><button type="button" class="logout" id="logout-btn">Выйти из панели разработчика</button></div>
+      <div class="form-message" id="form-message" role="status" aria-live="polite"></div>
+    </div>
+  </div>
+</body>
+</html>
